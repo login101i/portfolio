@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+    // codeGame
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  scrollbar-width: none;
+    
+}
+ 
+
+body {
+   font-family: 'Amatic SC', cursive;
+//    font-family: Arial, Helvetica, sans-serif;
+position:relative;
+}
+
+
+
+
+
+li,
+button,
+label,
+input,
+a,
+p {
+    font-size: $text
+}
+
+
+h1 {
+    font-size: $header1
+}
+
+h2 {
+    font-size:$header2
+}
+
+h3 {
+    font-size: $header3
+
+}
+
+h4 {
+    font-family: " Vibes";
+    font-size: $header4;
+
+}
+
+h5 {
+    font-size: $header5;
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $gray-text
+}
+
+body {
+    font-family: "Ruhl";
+}

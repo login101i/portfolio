@@ -1,0 +1,227 @@
+$header1:2.5rem;
+$header2:4rem;
+$header3: 2rem;
+$header4: 1.7rem;
+$header5: 1.2rem;
+$text:1.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+$gray-text: #2c2c2c;
+
+@mixin flex($justify,$align, $direction){
+    display:flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+
+@import "global";
+@import "intro";
+@import "projects";
+@import "contact";
+@import "footer";
+// codeGame
+
+
+// media
+@media screen and (max-width: 1330px){
+
+    html{
+        font-size: 73%;
+    }
+
+    .intro{
+    @include flex(space-between, center, row);
+        
+    }
+   
+    div.intro-images{
+            padding:5px;
+        }
+    .me{
+        height:440px;
+        width:500px;
+        display:block;
+    }
+    nav{
+        width:100%
+    }
+    @media (max-width:1100px){
+html{
+        font-size: 63%;
+    }
+    }
+    @media (max-width:970px){
+ html{
+        font-size: 53%;
+    }
+    .main-head{
+        width:90%;
+        margin:0 auto;
+    }
+   
+    ul li a{
+        font-size: 2rem;
+    }
+    .intro{
+    @include flex(space-between, center, row);
+    min-height:60vh;
+        
+    }
+    .splash{
+        display:none;
+    }
+    div.intro-images{
+            padding:5px;
+        }
+    .me{
+        height:340px;
+        width:400px;
+        display:block;
+    }
+    nav{
+        min-width:100%;
+    }
+    }
+    @media (max-width:820px){
+        .intro-text h3{
+            font-size: 23px;
+        }
+        .intro-social img{
+            height:40px;
+        }
+    }
+    @media (max-width:720px){
+       
+       
+        .intro-text h3{
+            font-size: 23px;
+        }
+        .intro-social img{
+            height:40px;
+        }
+        .Logo h1{
+            display: none;
+        }
+        .me{
+        height:240px;
+        width:300px;
+        display:block;
+        }
+
+    }
+     @media (max-width:580px){
+        
+         nav{
+        width:100%;
+        padding-right: 10px;
+         }
+     
+         .intro{
+    @include flex(center, center, column);
+    height:50vh;
+        
+    }
+        .intro-text {
+           width:90%;
+           display:block;
+           height:300px;
+        @include flex(center, center, column);
+        padding:0px;
+
+        }
+        .intro-social img{
+            height:40px;
+        }
+        .me{
+        height:240px;
+        width:300px;
+        display:block;
+    }
+    }
+       @media (max-width:500px){
+           
+         .main-head nav{
+             @include flex(center, center, column);
+             margin:0 auto;
+            height: 10vh;
+            padding-right: 30px;
+         }
+         .Logo{
+             width:30%;
+             h1{
+                display: none;
+             }
+         }
+         nav ul{
+             width:70%;
+         }
+         .intro{
+             height:400px;
+             .intro-text p{
+                 text-align: center;
+             }
+         }
+         .me{
+             height:200px;
+         }
+    }
+    @media (max-width:380px){
+    .main-head{
+    width:90%;
+    margin: 0 auto;
+    
+        .main-head nav{
+            min-height: 20vh;
+            @include flex(center, center, column);
+        }
+        .main-head nav {
+        border:2px solid blue;
+        width:90%;
+        margin:0 auto;
+
+        }
+        .main-head nav .Logo{
+            @include flex(center, center, column);
+            flex: 1 1 20rem;
+        }
+        .Logo h1{
+            display:none
+        } 
+        .active{
+    background: $gray-text;
+    color:white;
+    padding:1rem 1.5rem;
+    border-radius: 1.5rem;
+
+}
+       
+        ul a{
+            font-size: 13px;
+        }
+
+
+    }
+}
+}
+
+
+// animation
+ul.transition{
+    display:flex;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    pointer-events: none;
+    
+}
+ul.transition li {
+  transform: scaleY(0);
+  background: rgb(14, 59, 126);
+  width: 20%;
+  height:100vh;
+
+}

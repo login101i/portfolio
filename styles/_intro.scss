@@ -1,0 +1,158 @@
+body{
+    min-width: 280px;
+}
+.main-head{
+    width:95%;
+    margin: 0 0 0 auto;
+    @include flex(left, center, row);
+
+// background:$background-color;
+    nav{
+        @include flex(space-between, center, row);
+        min-height: 10vh;
+        width:70%;
+        flex-wrap: wrap;
+        .Logo{
+            @include flex( flex-start, center, row);
+            flex:1 1 10rem;
+            h1{
+                margin:2rem;
+            }
+
+        }
+        ul{
+            @include flex(space-around, center, row);
+            flex: 1 1 40rem;
+        }
+
+        
+    }
+}
+
+.intro{
+    min-height: 90vh;
+    width: 90%;
+    margin:auto;
+    display: flex;
+    @include flex(space-between, center, row);
+    h2{
+        font-size:5rem;
+        padding:1.5rem 0rem;
+        // 
+        background:$gradient;
+        background-clip:text;
+        -webkit-text-fill-color:transparent;
+        display: inline-block;
+        // codegame
+    }
+    h3{
+        font-size: 4rem;
+        padding: 1rem 0rem;
+    
+    }
+    p{
+        font-size: 1.5rem;
+        padding:1rem 0rem;
+    }
+    .intro-social{
+        padding:2rem 0rem;
+        a{
+            padding-right: 2rem;
+        }
+    }
+
+    }
+.splash{
+    position:absolute;
+    top:0%;
+    left:60%;
+    height:100%;
+    z-index: -1;
+    // transform: scale(1.2);
+
+}
+
+.active{
+    background: $gray-text;
+    color:white;
+    padding:1rem 3rem;
+    border-radius: 3rem;
+
+}
+
+.intro-text,
+.intro-images{
+    flex: 2 1 40rem;
+   
+ 
+
+}
+
+.color{
+    height:100px;
+    width:100px;
+    background:red;
+}
+.svg{
+    width:70%
+}
+
+// animations
+ // animation
+        @keyframes leaf_right{
+            from{
+                transform: translateY(0%);
+            }
+            to{
+                transform: translateY(3%);
+            }
+        }
+        #leaf_right{
+            animation: leaf_right 1s ease infinite alternate;
+        }
+        #leaf_left{
+            animation: leaf_right 1s ease infinite alternate 0.5s;
+        }
+
+       #mc_krus{
+           animation:me 1s ease-in-out infinite alternate ;
+           transform-origin: bottom;
+           ;
+       }
+        @keyframes me{
+            from{
+               transform: scale(0.85) rotateZ(8deg)
+            
+            }
+            to{
+               transform:scale(0.8) rotateZ(-6deg)
+            }
+        }
+        @keyframes clock{
+            form{
+                transform:rotate(0deg);
+
+            }
+            to{
+                transform: rotate(360deg)
+            }
+        }
+        #arrow-clock{
+            animation: clock 4s infinite linear;
+            transform-box: fill-box;
+            // codeGame
+            transform-origin: bottom;
+    
+        }
+
+         
+        
+
+// __________________________________AAAAAAAA
+
+    
+    
+
+       
+
+
