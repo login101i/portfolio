@@ -11,6 +11,7 @@
 }
 
 
+
 .travelly,
 .photography,
 .quiz,
@@ -36,9 +37,11 @@
         text-align: center;
         margin-bottom: 11px;
     }
-    li{
-    list-style: circle;
-    margin-left: 30px;
+    .project-description ul{
+    margin-left: 40px;
+        li{
+            list-style: "-  ";
+        }
     }
   
 

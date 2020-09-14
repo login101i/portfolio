@@ -468,9 +468,12 @@ p {
   margin-bottom: 11px;
 }
 
-li {
-  list-style: circle;
-  margin-left: 30px;
+.project-description ul {
+  margin-left: 40px;
+}
+
+.project-description ul li {
+  list-style: "-  ";
 }
 
 .travelly img,
