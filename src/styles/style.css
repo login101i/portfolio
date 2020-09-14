@@ -401,14 +401,14 @@ body {
 
 /* ------------AAAAAAAAAAAA */
 .projects {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   min-height: 80vh;
   margin-top: 50px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(455px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(455px, 1fr));
+  -ms-grid-rows: (minmax(355px, 1fr))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(355px, 1fr));
 }
 
 .travelly,
@@ -424,10 +424,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 400px;
   height: 400px;
   padding: 50px;
@@ -437,10 +437,50 @@ body {
   padding-top: 0px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin: 50px;
+}
+
+.travelly .project-image-title,
+.photography .project-image-title,
+.quiz .project-image-title,
+.project .project-image-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 h2 {
   padding: 30px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+li {
+  list-style: circle;
+  margin-left: 30px;
+}
+
+.travelly img,
+.photography img,
+.quiz img,
+.projects img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 350px;
+  border-radius: 10px;
 }
 
 .travelly img:hover,
@@ -456,7 +496,7 @@ h2 {
   .projects img {
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    height: 400px;
+    height: 300px;
   }
 }
 
@@ -480,7 +520,7 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 300px;
+    width: 200px;
     padding: 50px;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 15rem;
@@ -492,6 +532,7 @@ h2 {
   .projects img {
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    height: 300px;
   }
 }
 
@@ -509,6 +550,14 @@ h2 {
   }
 }
 
+@media (max-width: 1200px) {
+  .projects img {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    height: 270px;
+  }
+}
+
 @media (max-width: 1200px) and (max-width: 775px) {
   .projects .travelly img,
   .projects .photography img {
@@ -517,9 +566,26 @@ h2 {
 }
 
 @media (max-width: 1200px) and (max-width: 775px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .projects {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-grid-rows: (minmax(255px, 1fr))[auto-fill];
+        grid-template-rows: repeat(auto-fill, minmax(255px, 1fr));
   }
   .projects .travelly,
   .projects .photography {
@@ -533,11 +599,55 @@ h2 {
   .projects .photography img {
     height: 300px;
   }
+  .projects img {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    height: 250px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project {
+    height: 230px;
+  }
+  .project-description {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) and (max-width: 444px) {
+  .container {
+    border: 2px solid red;
+  }
   .projects {
-    height: 40vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: 2px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .projects .travelly img,
   .projects .photography img {
@@ -620,6 +730,11 @@ h2 {
   margin-top: 5rem;
   color: white;
   font-size: 22px;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
 }
 
 footer {

@@ -1,12 +1,13 @@
 .projects{
-    width:90%;
+    width:80%;
     margin: 0 auto;
     min-height: 80vh;
     margin-top: 50px;
     // @include flex(space-evenly, left, row);
     // flex-wrap: wrap;
     display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(455px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(355px, 1fr));
+
 }
 
 
@@ -14,30 +15,56 @@
 .photography,
 .quiz,
 .project{
-    @include flex(center, center, column);
+    @include flex(center, center, row);
     width: 400px;
     height:400px;
     padding:50px;
     flex: 1 1 25rem;
     padding-top: 0px;
     transition:0.4s;
+    margin:50px;
+     .project-image-title{
+           @include flex(center, center, column);
+
+   }
+ 
 }
     h2{
         padding:30px
     }
-   
+    p{
+        text-align: center;
+        margin-bottom: 11px;
+    }
+    li{
+    list-style: circle;
+    margin-left: 30px;
+    }
+  
+
+    .travelly img,
+.photography img,
+.quiz img,
+.projects img{
+        transition:0.5s;
+        height:350px;
+        border-radius: 10px;
+        
+    }
+
 .travelly img:hover,
 .photography img:hover,
 .quiz img:hover,
 .project img:hover{
 filter:brightness(80%);
-cursor:pointer
+cursor:pointer;
+
 }
 
 @media (max-width:1620px){
      .projects img{
         transition:0.5s;
-        height:400px
+        height:300px
     }
 }
 @media (max-width:1355px){
@@ -47,7 +74,7 @@ cursor:pointer
     .travelly,
 .photography{
     @include flex(center, center, column);
-    width: 300px;
+    width: 200px;
     padding:50px;
     flex: 1 1 15rem;
     padding-top: 0px;
@@ -55,7 +82,7 @@ cursor:pointer
 }
      .projects img{
         transition:0.5s;
-
+                height:300px
     }
 }
 @media (max-width:1200px){
@@ -64,6 +91,7 @@ cursor:pointer
         height:300px
         
     }
+    
 @media (max-width:905px){
     .projects .travelly img ,
      .projects .photography img{
@@ -71,6 +99,11 @@ cursor:pointer
         
     }
 }
+.projects img{
+        transition:0.5s;
+                height:270px
+    }
+   
 @media (max-width:775px){
     .projects .travelly img ,
      .projects .photography img{
@@ -79,8 +112,14 @@ cursor:pointer
     }
 }
 @media (max-width:775px){
+    .container{
+        @include flex(center, center, column)
+
+    }
     .projects {
         flex-wrap: wrap;
+          grid-template-rows: repeat(auto-fill, minmax(255px, 1fr));
+
     }
      .projects .travelly  ,
      .projects .photography {
@@ -95,11 +134,29 @@ padding-top:0px;
         height:300px
         
     }
-    
+    .projects img{
+        transition:0.5s;
+                height:250px
+    }
+     .container{
+        @include flex(center,center, column)
+    }
+  .project{
+      height:230px;
+  }
+    .project-description{
+      display:none
+    }
 }
 @media (max-width:444px){
-    .projects{
-        height:40vh;
+    .container{
+        border:2px solid red;
+    }
+       .projects {
+    flex-wrap: wrap;
+    border:2px solid red;
+    @include flex (center,center, column);
+    
     }
     .projects .travelly img ,
      .projects .photography img{
@@ -108,8 +165,10 @@ padding-top:0px;
     }
     .projects h2  ,
      .projects h2 {
-font-size: 22px;   
-padding:5px;    
+    font-size: 22px;   
+    padding:5px;    
     }
+    
+ 
 }
 }
