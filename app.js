@@ -8,7 +8,7 @@ website: mckrus.pl
 
 
 const colors = document.querySelectorAll('.transition li')
-console.log(colors)
+const iconsFirstLine = document.querySelector('.icons-first-line img')
 
 
 // color Generator
@@ -19,8 +19,8 @@ function generateHex() {
     for (let i = 0; i < 6; i++) {
         hash += letters[Math.floor(Math.random() * 8)]
     }
-   
-return hash
+
+    return hash
 
 
 }
@@ -51,7 +51,7 @@ function pageTransition() {
         stagger: 0.1,
         delay: 0.6
     })
-    
+
 }
 
 function contentAnimation() {

@@ -2,15 +2,21 @@
     width:90%;
     margin: 0 auto;
     min-height: 80vh;
-    @include flex(space-evenly, center, row);
-    flex-wrap: wrap;
+    margin-top: 50px;
+    // @include flex(space-evenly, left, row);
+    // flex-wrap: wrap;
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(455px, 1fr));
 }
 
 
 .travelly,
-.photography{
+.photography,
+.quiz,
+.project{
     @include flex(center, center, column);
     width: 400px;
+    height:400px;
     padding:50px;
     flex: 1 1 25rem;
     padding-top: 0px;
@@ -21,8 +27,11 @@
     }
    
 .travelly img:hover,
-.photography img:hover{
-filter:brightness(80%)
+.photography img:hover,
+.quiz img:hover,
+.project img:hover{
+filter:brightness(80%);
+cursor:pointer
 }
 
 @media (max-width:1620px){

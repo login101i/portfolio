@@ -9,7 +9,7 @@ body{
 // background:$background-color;
     nav{
         @include flex(space-between, center, row);
-        min-height: 10vh;
+        min-height:10vh;
         width:70%;
         flex-wrap: wrap;
         .Logo{
@@ -35,6 +35,7 @@ body{
     margin:auto;
     display: flex;
     @include flex(space-between, center, row);
+    padding-bottom: 50px;
     h2{
         font-size:5rem;
         padding:1.5rem 0rem;
@@ -46,7 +47,7 @@ body{
         // codegame
     }
     h3{
-        font-size: 4rem;
+        font-size: 3rem;
         padding: 1rem 0rem;
     
     }
@@ -56,12 +57,49 @@ body{
     }
     .intro-social{
         padding:2rem 0rem;
+    @include flex(left, left, row);
+      
         a{
             padding-right: 2rem;
+            font-size: 30px;
         }
     }
-
+    // .first-page-icons{
+    //     max-width:1000px;
+    //     height:300px;
+    //     z-index:63;
+    //     display:flex;
+    //     flex-direction: column;
+    //     justify-content: left;
+    //     align-items: left;
+    //     .icons-first-line{
+    //         padding-bottom: 70px;
+    //         @include flex(row, left, center)
+    //         img{
+    //             width: 120px;
+    //             height:120px;
+    //             transition:0.3s;
+    //             margin:10px
+    //         }
+    //         img:hover{
+    //             scale: 1.1;
+    //         }
+        .icons-second-line{
+            border-bottom: 2px solid rgba(6, 6, 53, 0.281);
+            padding-bottom: 70px;
+            img{
+                width: 40px;
+                height:40px;
+                transition:0.2s;
+                margin:10px
+            }
+            img:hover{
+                scale: 1.1;
+            }
+        }
     }
+    
+    
 .splash{
     position:absolute;
     top:0%;
@@ -91,7 +129,6 @@ body{
 .color{
     height:100px;
     width:100px;
-    background:red;
 }
 .svg{
     width:70%
@@ -152,7 +189,53 @@ body{
 
     
     
+/* ---------------first page */
+.first-page-icons{
+    // height:100vh;
+    // width: 100vw;
+    align-items: left;
+    background:linear-gradient(rgba(255, 255, 255, 0.424), rgb(255, 255, 255));
+    // .technologies{
+    //         text-align: center;
+    //     }
+    .intro-social{
+        text-align:center;
+        margin-top: 20px;
+        a{
+            padding:50px;
+        }
+    }
 
+
+}
+.first-section{
+    height:70vh;
+    
+}
+
+
+.icons-second-line{
+    display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+    // margin:0 auto;
+    padding:2rem;
+    width:80%;
+        // justify-items: center;
+
+
+}
+.first-page-icons img{
+   width:50px;
+   height:50px;
+   object-fit: contain;
+}
+
+
+
+
+
+
+/* ------------AAAAAAAAAAAA */
        
 
 

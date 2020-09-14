@@ -4,8 +4,8 @@ $header3: 2rem;
 $header4: 1.7rem;
 $header5: 1.2rem;
 $text:1.5rem;
-$gradient: linear-gradient(left, #38d39f, #38a4d3);
-$background-color: #154353;
+$gradient: linear-gradient(left, #0e37a7, #38a4d3);
+$background-color: #1b54be;
 $gray-text: #2c2c2c;
 
 @mixin flex($justify,$align, $direction){
@@ -25,12 +25,16 @@ $gray-text: #2c2c2c;
 
 
 // media
-@media screen and (max-width: 1330px){
+@media screen and (max-width: 1530px){
 
     html{
         font-size: 73%;
     }
-
+     .icons-first-line{
+        scale: 0.6;  
+      
+    }
+  
     .intro{
     @include flex(space-between, center, row);
         
@@ -47,15 +51,20 @@ $gray-text: #2c2c2c;
     nav{
         width:100%
     }
+   
     @media (max-width:1100px){
 html{
         font-size: 63%;
     }
     }
     @media (max-width:970px){
+        
  html{
         font-size: 53%;
     }
+     .first-page-icons{
+            display:none
+        }
     .main-head{
         width:90%;
         margin:0 auto;
@@ -67,6 +76,7 @@ html{
     .intro{
     @include flex(space-between, center, row);
     min-height:60vh;
+    
         
     }
     .splash{
@@ -85,6 +95,7 @@ html{
     }
     }
     @media (max-width:820px){
+       
         .intro-text h3{
             font-size: 23px;
         }
