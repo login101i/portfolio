@@ -1,5 +1,5 @@
 .form-section{
-    height: 80vh;
+    min-height: 80vh;
     flex-grow: 1;
 @include flex(center,center, column);
     form{
@@ -42,7 +42,7 @@
     }
 
     #map{
-        height:500px;
+        height:200px;
         width:100%
     }
 

@@ -403,24 +403,16 @@ body {
 .projects {
   width: 80%;
   margin: 0 auto;
-  min-height: 80vh;
   margin-top: 50px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (minmax(355px, 1fr))[auto-fill];
-      grid-template-rows: repeat(auto-fill, minmax(355px, 1fr));
 }
 
-.travelly,
-.photography,
-.quiz,
 .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -428,21 +420,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 400px;
-  height: 400px;
-  padding: 50px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25rem;
-          flex: 1 1 25rem;
-  padding-top: 0px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  margin: 50px;
+  width: 100%;
+  min-height: 300px;
+  max-height: 500px;
+  margin-bottom: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background: rgba(216, 214, 214, 0.109);
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.178);
+          box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.178);
 }
 
-.travelly .project-image-title,
-.photography .project-image-title,
-.quiz .project-image-title,
+.project:hover {
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.315);
+          box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.315);
+}
+
 .project .project-image-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,203 +462,31 @@ p {
   margin-bottom: 11px;
 }
 
-.project-description ul {
+.project-description {
   margin-left: 40px;
 }
 
-.project-description ul li {
+.project-description li {
   list-style: "-  ";
+  font-size: 14px;
 }
 
-.travelly img,
-.photography img,
-.quiz img,
 .projects img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  height: 350px;
+  max-height: 400px;
+  width: 400px;
   border-radius: 10px;
 }
 
-.travelly img:hover,
-.photography img:hover,
-.quiz img:hover,
 .project img:hover {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
   cursor: pointer;
 }
 
-@media (max-width: 1620px) {
-  .projects img {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    height: 300px;
-  }
-}
-
-@media (max-width: 1355px) {
-  .projects {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .travelly,
-  .photography {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 200px;
-    padding: 50px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 15rem;
-            flex: 1 1 15rem;
-    padding-top: 0px;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  .projects img {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    height: 300px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .projects .travelly img,
-  .projects .photography img {
-    height: 300px;
-  }
-}
-
-@media (max-width: 1200px) and (max-width: 905px) {
-  .projects .travelly img,
-  .projects .photography img {
-    height: 250px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .projects img {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    height: 270px;
-  }
-}
-
-@media (max-width: 1200px) and (max-width: 775px) {
-  .projects .travelly img,
-  .projects .photography img {
-    height: 200px;
-  }
-}
-
-@media (max-width: 1200px) and (max-width: 775px) {
-  .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .projects {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-grid-rows: (minmax(255px, 1fr))[auto-fill];
-        grid-template-rows: repeat(auto-fill, minmax(255px, 1fr));
-  }
-  .projects .travelly,
-  .projects .photography {
-    padding: 10px;
-  }
-  .projects h2,
-  .projects h2 {
-    padding-top: 0px;
-  }
-  .projects .travelly img,
-  .projects .photography img {
-    height: 300px;
-  }
-  .projects img {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    height: 250px;
-  }
-  .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .project {
-    height: 230px;
-  }
-  .project-description {
-    display: none;
-  }
-}
-
-@media (max-width: 1200px) and (max-width: 444px) {
-  .container {
-    border: 2px solid red;
-  }
-  .projects {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    border: 2px solid red;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .projects .travelly img,
-  .projects .photography img {
-    height: 150px;
-  }
-  .projects h2,
-  .projects h2 {
-    font-size: 22px;
-    padding: 5px;
-  }
-}
-
 .form-section {
-  height: 80vh;
+  min-height: 80vh;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -736,7 +558,7 @@ p {
 }
 
 #map {
-  height: 500px;
+  height: 200px;
   width: 100%;
 }
 
