@@ -48,115 +48,115 @@
 filter:brightness(90%);
 cursor:pointer;
 }
-// @media (max-width:1620px){
-//      .projects img{
-//         transition:0.5s;
-//         height:300px
-//     }
-// }
-// @media (max-width:1355px){
-//     .projects{
-//         flex-wrap: nowrap;
-//     }
-// .travelly,
-// .photography,
-// .project{
-//     @include flex(center, center, column);
-//     width: 200px;
-//     padding:50px;
-//     flex: 1 1 15rem;
-//     padding-top: 0px;
-//     transition:0.4s
-// }
-//      .projects img{
-//         transition:0.5s;
-//         height:300px
-//     }
-// }
-// @media (max-width:1200px){
-//      .projects .travelly img ,
-//      .projects .photography img{
-//         height:300px
+@media (max-width:1620px){
+     .projects img{
+        transition:0.5s;
+        height:300px
+    }
+}
+@media (max-width:1355px){
+    .projects{
+        flex-wrap: nowrap;
+    }
+.travelly,
+.photography,
+.project{
+    @include flex(center, center, column);
+    width: 200px;
+    padding:50px;
+    flex: 1 1 15rem;
+    padding-top: 0px;
+    transition:0.4s
+}
+     .projects img{
+        transition:0.5s;
+        height:300px
+    }
+}
+@media (max-width:1200px){
+     .projects .travelly img ,
+     .projects .photography img{
+        height:300px
         
-//     }
+    }
     
-// @media (max-width:905px){
-//     .projects .travelly img ,
-//      .projects .photography img{
-//         height:250px
+@media (max-width:905px){
+    .projects .travelly img ,
+     .projects .photography img{
+        height:250px
         
-//     }
-// }
-// .projects img{
-//         transition:0.5s;
-//                 height:270px
-//     }
+    }
+}
+.projects img{
+        transition:0.5s;
+                height:270px
+    }
    
-// @media (max-width:775px){
-//     .projects .travelly img ,
-//      .projects .photography img{
-//         height:200px
+@media (max-width:775px){
+    .projects .travelly img ,
+     .projects .photography img{
+        height:200px
         
-//     }
-// }
-// @media (max-width:775px){
-//     .container{
-//         @include flex(center, center, column)
+    }
+}
+@media (max-width:775px){
+    .container{
+        @include flex(center, center, column)
 
-//     }
-//     .projects {
-//         flex-wrap: wrap;
-//           grid-template-rows: repeat(auto-fill, minmax(255px, 1fr));
+    }
+    .projects {
+        flex-wrap: wrap;
+          grid-template-rows: repeat(auto-fill, minmax(255px, 1fr));
 
-//     }
-//      .projects .travelly  ,
-//      .projects .photography {
-// padding:10px;        
-//     }
-//      .projects h2  ,
-//      .projects h2 {
-// padding-top:0px;        
-//     }
-//     .projects .travelly img ,
-//      .projects .photography img{
-//         height:300px
+    }
+     .projects .travelly  ,
+     .projects .photography {
+padding:10px;        
+    }
+     .projects h2  ,
+     .projects h2 {
+padding-top:0px;        
+    }
+    .projects .travelly img ,
+     .projects .photography img{
+        height:300px
         
-//     }
-//     .projects img{
-//         transition:0.5s;
-//                 height:250px
-//     }
-//      .container{
-//         @include flex(center,center, column)
-//     }
-//   .project{
-//       height:230px;
-//   }
-//     .project-description{
-//       display:none
-//     }
-// }
-// @media (max-width:444px){
-//     .container{
-//         border:2px solid red;
-//     }
-//        .projects {
-//     flex-wrap: wrap;
-//     border:2px solid red;
-//     @include flex (center,center, column);
+    }
+    .projects img{
+        transition:0.5s;
+                height:250px
+    }
+     .container{
+        @include flex(center,center, column)
+    }
+  .project{
+      height:230px;
+  }
+    .project-description{
+      display:none
+    }
+}
+@media (max-width:444px){
+    .container{
+        border:2px solid red;
+    }
+       .projects {
+    flex-wrap: wrap;
+    border:2px solid red;
+    @include flex (center,center, column);
     
-//     }
-//     .projects .travelly img ,
-//      .projects .photography img{
-//         height:150px
+    }
+    .projects .travelly img ,
+     .projects .photography img{
+        height:150px
         
-//     }
-//     .projects h2  ,
-//      .projects h2 {
-//     font-size: 22px;   
-//     padding:5px;    
-//     }
+    }
+    .projects h2  ,
+     .projects h2 {
+    font-size: 22px;   
+    padding:5px;    
+    }
     
  
-// }
-// }
+}
+}
