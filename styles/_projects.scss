@@ -92,40 +92,28 @@ cursor:pointer;
                 height:270px
     }
    
-@media (max-width:775px){
-    .projects .travelly img ,
-     .projects .photography img{
-        height:200px
-        
-    }
-}
-@media (max-width:775px){
+
+@media (max-width:475px){
     .container{
-        @include flex(center, center, column)
+        @include flex(center, center, column);
+        max-width: 444px;
 
     }
-    .projects {
-        flex-wrap: wrap;
-          grid-template-rows: repeat(auto-fill, minmax(255px, 1fr));
-
+    .projects{
+    @include flex(center, center, column)
     }
-     .projects .travelly  ,
-     .projects .photography {
-padding:10px;        
-    }
-     .projects h2  ,
-     .projects h2 {
-padding-top:0px;        
-    }
-    .projects .travelly img ,
-     .projects .photography img{
-        height:200px;
-        width:150px
-        
+    
+  
+    .project{
+    min-height:300px;
+    width:260px;
+    max-height: 330px;
+    margin-bottom: 20px;
     }
     .projects img{
         transition:0.5s;
-                height:250px
+                height:200px;
+                width:250px;
     }
      .container{
         @include flex(center,center, column)
@@ -138,12 +126,9 @@ padding-top:0px;
     }
 }
 @media (max-width:444px){
-    .container{
-        border:2px solid red;
-    }
+  
        .projects {
     flex-wrap: wrap;
-    border:2px solid red;
     @include flex (center,center, column);
     
     }

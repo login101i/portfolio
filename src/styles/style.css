@@ -552,14 +552,7 @@ p {
   }
 }
 
-@media (max-width: 1200px) and (max-width: 775px) {
-  .projects .travelly img,
-  .projects .photography img {
-    height: 200px;
-  }
-}
-
-@media (max-width: 1200px) and (max-width: 775px) {
+@media (max-width: 1200px) and (max-width: 475px) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -574,30 +567,34 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 444px;
   }
   .projects {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-grid-rows: (minmax(255px, 1fr))[auto-fill];
-        grid-template-rows: repeat(auto-fill, minmax(255px, 1fr));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .projects .travelly,
-  .projects .photography {
-    padding: 10px;
-  }
-  .projects h2,
-  .projects h2 {
-    padding-top: 0px;
-  }
-  .projects .travelly img,
-  .projects .photography img {
-    height: 200px;
-    width: 150px;
+  .project {
+    min-height: 300px;
+    width: 260px;
+    max-height: 330px;
+    margin-bottom: 20px;
   }
   .projects img {
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    height: 250px;
+    height: 200px;
+    width: 250px;
   }
   .container {
     display: -webkit-box;
@@ -623,13 +620,9 @@ p {
 }
 
 @media (max-width: 1200px) and (max-width: 444px) {
-  .container {
-    border: 2px solid red;
-  }
   .projects {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    border: 2px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
