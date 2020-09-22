@@ -453,6 +453,10 @@ body {
           flex-direction: column;
 }
 
+.project .mobile-title {
+  display: none;
+}
+
 h2 {
   padding: 30px;
 }
@@ -471,12 +475,13 @@ p {
   font-size: 14px;
 }
 
-.projects img {
+.project img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   max-height: 400px;
   width: 400px;
   border-radius: 10px;
+  margin: 0px 5px;
 }
 
 .project img:hover {
@@ -485,74 +490,13 @@ p {
   cursor: pointer;
 }
 
-@media (max-width: 1620px) {
-  .projects img {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    height: 300px;
+@media (max-width: 900px) {
+  .project-description {
+    display: none;
   }
 }
 
-@media (max-width: 1355px) {
-  .projects {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .travelly,
-  .photography,
-  .project {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 200px;
-    padding: 50px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 15rem;
-            flex: 1 1 15rem;
-    padding-top: 0px;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  .projects img {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    height: 300px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .projects .travelly img,
-  .projects .photography img {
-    height: 300px;
-  }
-}
-
-@media (max-width: 1200px) and (max-width: 905px) {
-  .projects .travelly img,
-  .projects .photography img {
-    height: 250px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .projects img {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    height: 270px;
-  }
-}
-
-@media (max-width: 1200px) and (max-width: 475px) {
+@media (max-width: 475px) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -590,11 +534,17 @@ p {
     max-height: 330px;
     margin-bottom: 20px;
   }
+  .project .mobile-title {
+    display: block;
+    font-size: 18px;
+    margin-top: 22px;
+  }
   .projects img {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     height: 200px;
     width: 250px;
+    margin-top: 20px;
   }
   .container {
     display: -webkit-box;
@@ -616,35 +566,6 @@ p {
   }
   .project-description {
     display: none;
-  }
-}
-
-@media (max-width: 1200px) and (max-width: 444px) {
-  .projects {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .projects .travelly img,
-  .projects .photography img {
-    height: 150px;
-  }
-  .projects h2,
-  .projects h2 {
-    font-size: 22px;
-    padding: 5px;
   }
 }
 

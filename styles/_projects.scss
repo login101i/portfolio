@@ -1,3 +1,7 @@
+// body{
+//     min-width: 301px;
+//     border:1px solid red;
+// }
 .projects{
     width:80%;
     margin: 0 auto;
@@ -15,6 +19,7 @@
     background:rgba(216, 214, 214, 0.109);
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.178);
+    
 
     &:hover{
         // background:rgba(197, 142, 15, 0.137);
@@ -22,6 +27,9 @@
     }
      .project-image-title{
            @include flex(center, center, column);
+   }
+   .mobile-title{
+       display:none;
    }
 }
     h2{
@@ -38,59 +46,37 @@
             font-size: 14px;
         }
     }
-.projects img{
+.project img{
         transition:0.5s;
         max-height:400px;
         width:400px;
         border-radius: 10px;
+        margin:0px 5px;
     }
 .project img:hover{
 filter:brightness(90%);
 cursor:pointer;
 }
-@media (max-width:1620px){
-     .projects img{
-        transition:0.5s;
-        height:300px
-    }
+
+@media (max-width:900px){
+.project-description{
+    display:none
 }
-@media (max-width:1355px){
-    .projects{
-        flex-wrap: nowrap;
-    }
-.travelly,
-.photography,
-.project{
-    @include flex(center, center, column);
-    width: 200px;
-    padding:50px;
-    flex: 1 1 15rem;
-    padding-top: 0px;
-    transition:0.4s
+   
 }
-     .projects img{
-        transition:0.5s;
-        height:300px
-    }
-}
-@media (max-width:1200px){
-     .projects .travelly img ,
-     .projects .photography img{
-        height:300px
+
+// @media (max-width:1200px){
+   
         
-    }
+//     }
     
-@media (max-width:905px){
-    .projects .travelly img ,
-     .projects .photography img{
-        height:250px
-        
-    }
-}
-.projects img{
-        transition:0.5s;
-                height:270px
-    }
+// @media (max-width:905px){
+   
+// }
+// .projects img{
+//         transition:0.5s;
+//         height:270px
+//     }
    
 
 @media (max-width:475px){
@@ -109,11 +95,17 @@ cursor:pointer;
     width:260px;
     max-height: 330px;
     margin-bottom: 20px;
+     .mobile-title{
+      display:block;
+      font-size: 18px;
+      margin-top: 22px;
+   }
     }
     .projects img{
         transition:0.5s;
                 height:200px;
                 width:250px;
+                margin-top: 20px;
     }
      .container{
         @include flex(center,center, column)
@@ -125,24 +117,5 @@ cursor:pointer;
       display:none
     }
 }
-@media (max-width:444px){
-  
-       .projects {
-    flex-wrap: wrap;
-    @include flex (center,center, column);
-    
-    }
-    .projects .travelly img ,
-     .projects .photography img{
-        height:150px
-        
-    }
-    .projects h2  ,
-     .projects h2 {
-    font-size: 22px;   
-    padding:5px;    
-    }
-    
- 
-}
-}
+
+
