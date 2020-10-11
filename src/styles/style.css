@@ -583,14 +583,98 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-section .about {
+  width: 60%;
+  margin: 0 100px;
+}
+
+.form-section .about img {
+  display: block;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  max-height: 800px;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-section .about li {
+  list-style: none;
+}
+
+.form-section .about li i {
+  margin: 10px;
+}
+
+.form-section .about ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.form-section .about ul li {
+  margin: 10px 10px;
+}
+
+.form-section .about ul li img {
+  width: 50px;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-filter: blur(100%);
+          filter: blur(100%);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form-section .about ul li img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.form-section .formularz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
-.form-section form {
-  width: 60vw;
+.form-section .formularz form {
+  width: 100%;
   padding: 1rem 2rem;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 10px rgba(0, 0, 0, 0.3);
@@ -612,27 +696,27 @@ p {
   border-radius: 2rem;
 }
 
-.form-section form label {
+.form-section .formularz form label {
   padding: 0.5rem 0.5rem;
   width: 80%;
   text-align: center;
   font-size: 18px;
 }
 
-.form-section form input,
-.form-section form textarea {
+.form-section .formularz form input,
+.form-section .formularz form textarea {
   padding: 0.5rem;
   width: 90%;
   font-size: 22px;
   font-family: 'Amatic SC', cursive;
 }
 
-.form-section form input:focus,
-.form-section form textarea:focus {
+.form-section .formularz form input:focus,
+.form-section .formularz form textarea:focus {
   outline: 2px solid black;
 }
 
-.form-section button {
+.form-section .formularz button {
   width: 50%;
   padding: 1rem;
   background-color: #1b54be;
@@ -689,6 +773,68 @@ footer h4 {
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
   text-align: center;
+}
+
+body h2 {
+  color: #423e3e;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+body .article {
+  width: 86%;
+  margin: 0 auto;
+  max-width: 1110px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .article .text {
+  margin-top: 20px;
+}
+
+body .article .text p {
+  text-align: left;
+}
+
+body .line {
+  border-bottom: 2px solid #443e3e;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 11px 3px -6px rgba(0, 0, 0, 0.38);
+  box-shadow: 0px 11px 3px -6px rgba(0, 0, 0, 0.38);
+}
+
+body .line h3 {
+  font-size: 30px;
+}
+
+body .line .lazy {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+}
+
+body .line p {
+  max-width: 900px;
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1530px) {

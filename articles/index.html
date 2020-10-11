@@ -4,11 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Articles</title>
+    <link rel="stylesheet" href="../src/styles/style.css">
 
-<body>
-    <a href="https://callstack.com/blog/react-native-paper-4-0/">React Native Paper 4.0</a>
+
+<body data-barba="wrapper">
+    <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+
+
+    </ul>
+    <div data-barba="container" data-barba-namespace="home">
+        <header class="main-head">
+            <nav>
+                <div class="Logo">
+                    <img src="../icons/code.svg" alt="logo">
+                    <h1>Mc Krus</h1>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../projects/">Projects</a></li>
+                    <li><a class="active" href="">Articles</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h2>Articles</h2>
+        <div style="width: 60%;" class="line"></div>
+
+        <div class="article1 article">
+            <img src="../img/unvail.png" alt="" class="lazy" data-src='../img/RN paper.jpeg' />
+            <div class="text">
+                <h3>React Native Paper 4.0</h3>
+                <p>New developer experience of the library. So what's new and what's coming up in RV paper?</p>
+                <p>RN Paper is a collection of customizable, cross-plarform, production-ready components for RN</p>
+                <li>Text input adormnents</li>
+                <li>Disabling animation based on device accessibility settings</li>
+                <li>Automatic theme management based on device settings</li>
+                <li>Typescript improvements</li>
+                <p style="margin-top: 20px;">
+                    Source:
+                    <a href="https://callstack.com/blog/react-native-paper-4-0/">React Native Paper 4.0</a>
+                </p>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <footer>
+        <h4>Mc Krus &copy 2020</h4>
+        <!-- codeGame -->
+        <ul>
+            <li><a href=""><img src="/icons/linked-in.svg" alt=""></a></li>
+            <li><a href=""><img src="/icons/instagram_1.svg" alt=""></a></li>
+        </ul>
+    </footer>
+
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="./main.js"></script>
+
 </body>
 
 </html>
