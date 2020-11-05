@@ -183,7 +183,8 @@ body {
 .intro h2 {
   font-size: 5rem;
   padding: 1.5rem 0rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#242424));
+  background-image: -webkit-gradient(linear, left top, right top, from(#0e2875), to(#38a4d3));
+  background-image: linear-gradient(left, #0e2875, #38a4d3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -719,7 +720,7 @@ p {
 .form-section .formularz button {
   width: 50%;
   padding: 1rem;
-  background-color: #1b54be;
+  background-color: #192844;
   margin-top: 5rem;
   color: white;
   font-size: 22px;
@@ -731,7 +732,7 @@ p {
 }
 
 footer {
-  background: #1b54be;
+  background: #192844;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
