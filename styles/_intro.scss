@@ -56,6 +56,11 @@ body{
         font-size: 1.5rem;
         padding:1rem 0rem;
     }
+
+
+    
+
+
     .intro-social{
         padding:2rem 0rem;
     @include flex(left, left, row);
@@ -199,6 +204,7 @@ body{
     // .technologies{
     //         text-align: center;
     //     }
+  
     .intro-social{
         text-align:center;
         margin-top: 20px;
@@ -230,6 +236,7 @@ body{
    height:50px;
    object-fit: contain;
 }
+
 
 
 
