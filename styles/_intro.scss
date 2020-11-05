@@ -42,9 +42,10 @@ body{
         // 
         background:$gradient;
         background-clip:text;
-        -webkit-text-fill-color:transparent;
+        -webkit-text-fill-color:rgba (0,0,0,0.0001);
         display: inline-block;
         // codegame
+        pointer-events: none;
     }
     h3{
         font-size: 3rem;
