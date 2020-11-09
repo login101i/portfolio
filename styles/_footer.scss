@@ -1,9 +1,12 @@
 footer{
+   
     background:$background-color;
     color:white;
     @include flex(center, center, row);
     padding:10px;
     height:10vh;
+   
+
     ul{
         flex:1 1 40rem;
             @include flex(space-around, center, row);

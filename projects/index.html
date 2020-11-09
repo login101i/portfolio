@@ -29,37 +29,125 @@
 
         <header class="main-head">
             <nav>
-                <div class="Logo">
-                    <img src="../icons/code.svg" alt="logo">
-                    <h1>Mc Krus</h1>
-                </div>
+
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a class="active" href="">Projects</a></li>
                     <li><a href="../articles/">Articles</a></li>
-                    <li><a href="../content/">Contact</a></li>
+                    <li><a href="../contact/">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
 
 
+
         <section class="projects">
-            <div class=" project">
 
-                <a class="project-image-title" href="https://photography-project.netlify.app">
-                    <img src="../img/elena-joy.jpg" alt="">
-                    <p class="mobile-title">Fotograf.com</p>
+            <!-- główne projekty -->
+            <div class="main-projects">
+                <!-- ------------------------ -->
+                <div class="main-project-example">
+                    <div class="project">
+                        <a class="project-image-title" href="https://baule-store.vercel.app">
+                            <img src="../img/BauleStore.png" alt="Baules Store">
+                            <p class="mobile-title">Spanish Quiz</p>
+                        </a>
+                        <div class="project-description">
+                            <p>E-commerce project in React.</p>
+                            <ul>
+                                <H5></H5>
+                              
+                                <li>Cart Item logic</li>
+                                <li>Bootstrap/Styled Components</li>
+                                <li>Context API/useState/Proptypes</li>
+                                <li>Paypall button implementation</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------- -->
+                <!-- ------------------------ -->
+                <div class="main-project-example">
+                    <div class="project">
+                        <a class="project-image-title" href="https://mkrus-moviedb.netlify.app/">
+                            <img src="../img/5movieDB.jpg" alt="">
+                            <p class="mobile-title">Movie Data Base</p>
+
+                        </a>
+                        <div class="project-description">
+                            <p>Fetching data from movie data base.</p>
+                            <ul>
+                                <li>description1</li>
+                                <li>description2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------- -->
+                <!-- ------------------------ -->
+                <div class="main-project-example">
+                    <div class=" project">
+
+                        <a class="project-image-title" href="https://photography-project.netlify.app">
+                            <img src="../img/elena-joy.jpg" alt="">
+                            <p class="mobile-title">Fotograf.com</p>
+                        </a>
+
+                        <div class="project-description">
+                            <p>Fotograf.com</p>
+                            <ul>
+                                <li>description1</li>
+                                <li>description2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------- -->
+                <!-- ------------------------ -->
+                <div class="main-project-example">
+                    <div class=" project">
+                
+                        <a class="project-image-title" href="https://akangame.netlify.app/">
+                            <img src="../img/akan quiz.png" alt="">
+                            <p class="mobile-title">Akan Quiz</p>
+                        </a>
+                
+                        <div class="project-description">
+                            <p> Designer Quiz in React.</p>
+                            <ul>
+                                <li>setState/useState/ComponentDidMount</li>
+                                <li> media queries in css:</li>
+                                <li>game logic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------- -->
+            </div>
+
+            <!-- ---------------------------------------------------- -->
+
+            <div class="project">
+                <a class="project-image-title" href="https://baule-store.vercel.app">
+                    <img style="width: 310px; height:100%" src="../img/BauleStore.png" alt="Baules Store">
+                    <p class="mobile-title">Spanish Quiz</p>
                 </a>
-
                 <div class="project-description">
-                    <p>Fotograf.com</p>
+                    <p>Baules Store- E-commerce project in React with all the logic process.</p>
                     <ul>
-                        <li>description1</li>
-                        <li>description2</li>
+                        <H5></H5>
+                        <li>React Application</li>
+                        <li>Cart Item logic</li>
+                        <li>Bootstrap/Styled Components</li>
+                        <li>Context API/useState/Proptypes</li>
+                        <li>Paypall button implementation</li>
+
                     </ul>
                 </div>
             </div>
+
 
             <div class=" project">
                 <a class="project-image-title" href="https://travel-project-html.netlify.app">
@@ -134,23 +222,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="project">
+            <!-- -------------------------- -->
 
-                <a class="project-image-title" href="https://api-google-maps.netlify.app">
-
-                    <img src="../img/Google-api.png" alt="">
-                    <p class="mobile-title">Wheather API</p>
-
-                </a>
-
-                <div class="project-description">
-                    <p>Google Maps Api</p>
-                    <ul>
-                        <li>fetchning data from maps.googleapis.com/maps/api</li>
-                        <li>description2</li>
-                    </ul>
-                </div>
-            </div>
             <div class="project">
 
                 <a class="project-image-title" href="https://mkrus-clock.netlify.app/">
@@ -217,20 +290,7 @@
 
             <!-- -------------------------------------------------------------- -->
 
-            <div class="project">
-                <a class="project-image-title" href="https://mkrus-moviedb.netlify.app/">
-                    <img src="../img/5movieDB.jpg" alt="">
-                    <p class="mobile-title">Movie Data Base</p>
 
-                </a>
-                <div class="project-description">
-                    <p>Fetching data from movie data base.</p>
-                    <ul>
-                        <li>description1</li>
-                        <li>description2</li>
-                    </ul>
-                </div>
-            </div>
             <!-- -------------------------------------------------------------- -->
             <div class="project">
                 <a class="project-image-title" href="https://mkrus-iphone-store.netlify.app/">
@@ -355,14 +415,17 @@
 
 
     <footer>
-        <h4>Mc Krus &copy 2020</h4>
+        <h4>Maciej Kruszyniak &copy 2020</h4>
         <!-- codeGame -->
         <ul>
-            <li><a href=""><img src="/icons/twitter_1.svg" alt=""></a></li>
-            <li><a href=""><img src="/icons/linked-in.svg" alt=""></a></li>
-            <li><a href=""><img src="/icons/instagram_1.svg" alt=""></a></li>
+           
+        <li><a href=""><img src="/icons/linked-in.svg" alt=""></a></li>
+        <li><a href="https://www.instagram.com/mc_krus/"><img src="/icons/instagram_1.svg" alt=""></a></li>
         </ul>
     </footer>
+    <div class="cursor">
+        <div class="cursor-text"></div>
+    </div>
 
 
     <script src="https://unpkg.com/@barba/core"></script>

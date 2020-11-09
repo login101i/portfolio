@@ -6,6 +6,46 @@
     width:80%;
     margin: 0 auto;
     margin-top: 50px;
+     .main-projects{
+       
+      @include flex(center, center, row);
+       
+        margin: 40px 20px;
+        padding:10px;
+        .main-project-example{
+            width:18%;
+            flex:1;
+            margin: 0px 10px;
+            .project{
+                @include flex(center, center, column);
+                height:100%;
+                padding:16px;
+                &:hover{
+           opacity:0.9;
+           background-color: rgba(238, 234, 234, 0.794);
+                }
+               img{
+                    display:block;
+                    width:300px;
+                    &:hover{
+                      opacity: 1;
+                      filter:brightness(100%);
+                    }
+                }
+                .project-description{
+                    text-align: center;
+                    margin:20px;
+                    margin-bottom: 20px;
+                    p{
+                        margin: 10px 20px 20px 20px;
+                        font-size: 18px;
+                  
+                    }
+                }
+            }
+
+        }
+    }
     // display: grid;
 //   grid-template-rows: repeat(auto-fill, minmax(755px, 1fr));
 }
@@ -13,7 +53,7 @@
     @include flex(left, center, row);
     width: 100%;
     min-height:300px;
-    max-height: 500px;
+    max-height: 700px;
     margin-bottom: 20px;
     transition:0.2s;
     background:rgba(216, 214, 214, 0.109);
@@ -86,7 +126,8 @@ cursor:pointer;
 
     }
     .projects{
-    @include flex(center, center, column)
+    @include flex(center, center, column);
+   
     }
     
   
@@ -119,3 +160,8 @@ cursor:pointer;
 }
 
 
+.main-head{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

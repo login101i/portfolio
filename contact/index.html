@@ -34,10 +34,7 @@
 
         <header class="main-head">
             <nav>
-                <div class="Logo">
-                    <img src="../icons/code.svg" alt="logo">
-                    <h1>Mc Krus</h1>
-                </div>
+
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../projects/">Projects</a></li>
@@ -48,13 +45,15 @@
         </header>
         <section class="form-section">
             <div class="about">
-                <img src="../img/about image.jpg" alt="">
+                <img src="../img/foto5.jpg" alt="">
                 <p style="margin-top: 20px;">Maciej Kruszyniak</p>
                 <li><i class="fa fa-phone"></i> +48 698 673 254</li>
                 <li><i class="fa fa-envelope"></i>maciejkruszyniak@gmail.com</li>
                 <ul>
-                    <li><a href=""><img src="/img/linkdin icon color.png" alt=""></a></li>
-                    <li><a href=""><img src="../img/instagram icon color.jpg" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/maciej-kruszyniak-281244150/"><img
+                                src="/img/linkdin icon color.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/mc_krus/"><img src="../img/instagram icon color.jpg"
+                                alt=""></a></li>
 
                 </ul>
             </div>
@@ -74,14 +73,14 @@
                 </form>
 
                 <button class name='submit' type="submit" value="submit">WYŚLIJ</button>
-                <p>(uwaga: jeszcze muszę połączyć ten formularz z moją skrzynką. Na razie nie działa :)</p>
+                <!-- <p>(uwaga: jeszcze muszę połączyć ten formularz z moją skrzynką. Na razie nie działa :)</p> -->
             </div>
 
         </section>
 
 
-
-        <div class="map">
+        <!-- sekcja google -->
+        <!-- <div class="map">
             <h2>My google map</h2>
             <div id="map"></div>
         </div>
@@ -99,18 +98,20 @@
             <div class="card-block" id="address-components"></div>
 
             <div class="card-block" id="geometry"></div>
-        </div>
+        </div> -->
+        <!-- sekcja google -->
 
 
 
 
         <footer>
-            <h4>Mc Krus &copy 2020</h4>
+            <h4>Maciej Kruszyniak &copy 2020</h4>
             <!-- codeGame -->
             <ul>
-                <li><a href=""><img src="/icons/twitter_1.svg" alt=""></a></li>
-                <li><a href=""><img src="/icons/linked-in.svg" alt=""></a></li>
-                <li><a href=""><img src="/icons/instagram_1.svg" alt=""></a></li>
+
+                <li><a href="https://www.linkedin.com/in/maciej-kruszyniak-281244150/"><img src="/icons/linked-in.svg"
+                            alt=""></a></li>
+                <li><a href="https://www.instagram.com/mc_krus/"><img src="/icons/instagram_1.svg" alt=""></a></li>
             </ul>
         </footer>
     </div>
@@ -180,7 +181,7 @@
         locationForm.addEventListener('submit', geocode)
 
         function geocode(e) {
-            // prevent actual submit
+            // prevent actual submitl
             e.preventDefault()
             // var location = ' Warszawa ul.Moniuszki 5'
             var location = document.getElementById('location-input').value

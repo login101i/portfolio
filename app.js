@@ -27,12 +27,19 @@ function generateHex() {
 console.log(generateHex())
 
 
+function getColors() {
 
-colors.forEach(color => {
-    const colorHash = generateHex()
-    color.style.backgroundColor = colorHash
-    console.log(colorHash)
-})
+    const colorsExamples = ['#2f6690', "#3a7ca5", "#d9dcd6", "#16425b", "#81c3d7", "#86b7d5", "#eaece9", "#2c82b5", "#54aec9"]
+
+    colors.forEach(color => {
+        const colorHash = generateHex()
+        const index = Math.floor(Math.random() * 5)
+        color.style.backgroundColor = colorsExamples[Math.floor(Math.random() * 9)]
+        console.log(colorHash)
+        console.log(colorsExamples);
+        console.log(index)
+    })
+}
 
 function pageTransition() {
     var tl = gsap.timeline();
@@ -98,6 +105,58 @@ barba.init({
         }
     }]
 })
+
+
+// cursor -------------------
+let mouse = document.querySelector('.cursor');
+
+
+function cursor(e) {
+    console.log(e)
+    mouse.style.top = e.pageY + 'px';
+    mouse.style.left = e.pageX + 'px';
+}
+
+
+function activeCursor(e) {
+    let item = e.target;
+    console.log(item)
+    let logo = document.getElementById('Logo')
+    let buttons = document.querySelector(".button")
+    let cursorText = document.querySelector(".cursor-text")
+    if (item === logo) {
+        mouse.classList.add('activeCursor')
+    } else {
+        mouse.classList.remove('activeCursor')
+    }
+    if (item.classList.contains('button')) {
+        mouse.classList.add('activeCursorButton')
+        cursorText.innerText = "click"
+        gsap.to(".title-swipe", 1, {
+            y: "0%"
+        })
+    } else {
+        mouse.classList.remove('activeCursorButton')
+        cursorText.innerText = ""
+        gsap.to(".title-swipe", 1, {
+            y: "100%"
+        })
+
+    }
+
+}
+
+// event na item menu
+const menuItems = document.querySelectorAll('.main-head nav ul li a')
+
+menuItems.forEach(menuItem => {
+    menuItem.addEventListener('onClick', getColors())
+})
+
+
+window.addEventListener('mousemove', cursor)
+window.addEventListener("mouseover", activeCursor)
+
 
 
 

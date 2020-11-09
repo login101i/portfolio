@@ -36,6 +36,7 @@ body{
     display: flex;
     @include flex(space-between, center, row);
     padding-bottom: 50px;
+
     h2{
         font-size:5rem;
         padding:1.5rem 0rem;
@@ -140,6 +141,42 @@ body{
     width:70%
 }
 
+// ------------------------------CURSOR SECTION--------------------------
+
+.cursor{
+    height:40px;
+    width:40px;
+    border:2px solid #19418aab;
+    border-radius: 50%;
+    position: absolute;
+    /* display:none; */
+   transform:translate(-50%, -50%);
+   pointer-events: none;
+   transition: 0.5s;
+   transition-property: background, transform;
+   transform-origin: 75% 75%;
+}
+.activeCursor{
+    background:yellow;
+   transform:scale(2)
+}
+
+.cursor-text{
+    color:black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+   
+}
+.activeCursorButton{
+    background:white;
+    transform:scale(2);
+    transform-origin: 85% 25%;
+
+}
+// ----------------------------------------------------
+
 // animations
  // animation
         @keyframes leaf_right{
@@ -239,7 +276,11 @@ body{
 
 
 
+// ---------------transition
 
+.transition li{
+    z-index:100
+}
 
 
 

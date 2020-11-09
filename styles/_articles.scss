@@ -13,7 +13,12 @@ body{
                 margin: 0 auto;
                 max-width: 1110px;
               margin-bottom: 40px;
-              @include flex(center,left, column);
+              @include flex(center,center, column);
+              img{
+                height:400px;
+            
+                  background-size: contain;
+              }
               
                 .text{
                     margin-top:20px;
@@ -41,11 +46,7 @@ box-shadow: 0px 11px 3px -6px rgba(0,0,0,0.38);
                 font-size: 30px;
             }
 
-            .lazy {
-                display: block;
-                margin:20px auto;
-                width:100%;
-            }
+           
 
             p {
                 max-width: 900px;
@@ -56,4 +57,40 @@ box-shadow: 0px 11px 3px -6px rgba(0,0,0,0.38);
             }
         }
     }
+
+    // ------------------------------CURSOR SECTION--------------------------
+
+.cursor{
+    height:40px;
+    width:40px;
+    border:2px solid #19418aab;
+    border-radius: 50%;
+    position: absolute;
+    /* display:none; */
+   transform:translate(-50%, -50%);
+   pointer-events: none;
+   transition: 0.5s;
+   transition-property: background, transform;
+   transform-origin: 75% 75%;
+}
+.activeCursor{
+    background:yellow;
+   transform:scale(2)
+}
+
+.cursor-text{
+    color:black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+   
+}
+.activeCursorButton{
+    background:white;
+    transform:scale(2);
+    transform-origin: 85% 25%;
+
+}
+// ----------------------------------------------------
         
