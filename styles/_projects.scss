@@ -2,8 +2,13 @@
 //     min-width: 301px;
 //     border:1px solid red;
 // }
+.container{
+    max-width: 1900px;
+  
+
+}
 .projects{
-    width:80%;
+    width:90%;
     margin: 0 auto;
     margin-top: 50px;
      .main-projects{
@@ -13,7 +18,7 @@
         margin: 40px 20px;
         padding:10px;
         .main-project-example{
-            width:18%;
+            width:19%;
             flex:1;
             margin: 0px 10px;
             .project{
@@ -26,7 +31,7 @@
                 }
                img{
                     display:block;
-                    width:300px;
+                    width:100%;
                     &:hover{
                       opacity: 1;
                       filter:brightness(100%);
@@ -53,7 +58,7 @@
     @include flex(left, center, row);
     width: 100%;
     min-height:300px;
-    max-height: 700px;
+   
     margin-bottom: 20px;
     transition:0.2s;
     background:rgba(216, 214, 214, 0.109);
@@ -81,6 +86,7 @@
     }
     .project-description {
     margin-left: 40px;
+    
         li{
             list-style: "-  ";
             font-size: 14px;
@@ -98,70 +104,41 @@ filter:brightness(90%);
 cursor:pointer;
 }
 
-@media (max-width:900px){
-.project-description{
-    display:none
-}
-   
+.project5SmallScreen{
+    display:none;
 }
 
-// @media (max-width:1200px){
-   
-        
-//     }
-    
-// @media (max-width:905px){
-   
-// }
-// .projects img{
-//         transition:0.5s;
-//         height:270px
-//     }
-   
 
-@media (max-width:475px){
-    .container{
-        @include flex(center, center, column);
-        max-width: 444px;
 
-    }
-    .projects{
-    @include flex(center, center, column);
-   
-    }
-    
+@media (max-width:1300px){
   
-    .project{
-    min-height:300px;
-    width:260px;
-    max-height: 330px;
-    margin-bottom: 20px;
-     .mobile-title{
-      display:block;
-      font-size: 18px;
-      margin-top: 22px;
-   }
-    }
-    .projects img{
-        transition:0.5s;
-                height:200px;
-                width:250px;
-                margin-top: 20px;
-    }
-     .container{
-        @include flex(center,center, column)
-    }
-  .project{
-      height:230px;
-  }
-    .project-description{
-      display:none
-    }
+
+       .main-project-example{
+            display:none;
+       
 }
-
-
-.main-head{
+.project5SmallScreen{
+    display:block;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+  
 }
+ 
+.project-description {
+   margin:10px 0px;
+ 
+    
+}
+ 
+@media (max-width:750px){
+    .project{
+        flex-direction: column;
+
+    }
+}
+}
+
+
+
+
+
