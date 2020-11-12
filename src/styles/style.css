@@ -670,6 +670,9 @@ p {
 .form-section .about {
   width: 44%;
   margin: 0 100px;
+  text-align: center;
+  font-size: 30px;
+  color: #3e3f42;
 }
 
 .form-section .about img {
@@ -686,8 +689,13 @@ p {
   border-radius: 1%;
 }
 
+.form-section .about p {
+  font-size: 30px;
+}
+
 .form-section .about li {
   list-style: none;
+  font-size: 30px;
 }
 
 .form-section .about li i {
@@ -735,6 +743,7 @@ p {
 }
 
 .form-section .formularz {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

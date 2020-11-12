@@ -9,6 +9,9 @@
       
         width:44%;
         margin:0 100px;
+        text-align: center;
+          font-size: 30px;
+          color:rgb(62, 63, 66);
         img{
             display:block;
             width:100%;
@@ -21,8 +24,12 @@
                border-radius: 1%;
                
         }
+        p{
+              font-size: 30px;
+        }
         li{
                  list-style: none;
+                 font-size: 30px;
                  i{
                      margin:10px
                  }
@@ -50,7 +57,7 @@
         }
     }
     .formularz{
-         
+         display:none;
             @include flex(center,center, column);
             width:100%;
         form{
