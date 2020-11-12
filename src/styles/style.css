@@ -669,10 +669,22 @@ p {
 
 .form-section .about {
   width: 44%;
-  margin: 0 100px;
   text-align: center;
   font-size: 30px;
   color: #3e3f42;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form-section .about img {
@@ -717,6 +729,7 @@ p {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style: none;
+  margin: 50px 100px;
 }
 
 .form-section .about ul li {

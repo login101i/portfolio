@@ -8,10 +8,14 @@
     .about{
       
         width:44%;
-        margin:0 100px;
+        
         text-align: center;
           font-size: 30px;
           color:rgb(62, 63, 66);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         img{
             display:block;
             width:100%;
@@ -37,6 +41,7 @@
         ul{
               @include flex(center,center, row);
           list-style: none;
+          margin:50px 100px;
 
             li{
                   margin:10px 10px;
