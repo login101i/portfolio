@@ -449,6 +449,34 @@ body {
 }
 
 /* ------------AAAAAAAAAAAA */
+.line {
+  height: 2px;
+  width: 100vw;
+  color: #111;
+  margin: 80px 0px;
+}
+
+.przykladowe__projekty {
+  display: block;
+  -webkit-box-align: 'center';
+      -ms-flex-align: 'center';
+          align-items: 'center';
+  -webkit-box-pack: 'center';
+      -ms-flex-pack: 'center';
+          justify-content: 'center';
+}
+
+.przykladowe__projekty p {
+  font-size: 60px;
+  color: #111;
+  margin: 90px auto;
+}
+
+.project.project5SmallScreen {
+  background: rgba(69, 160, 160, 0.446);
+  z-index: 1;
+}
+
 .container {
   max-width: 1900px;
 }
@@ -626,10 +654,10 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .project-description {
     margin: 10px 0px;
