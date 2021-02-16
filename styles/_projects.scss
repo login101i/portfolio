@@ -8,17 +8,16 @@
 
 }
 .projects{
-    width:90%;
+    width:100%;
     margin: 0 auto;
     margin-top: 50px;
      .main-projects{
        
       @include flex(center, center, row);
+      margin:0 auto;
        
-        margin: 40px 20px;
-        padding:10px;
         .main-project-example{
-            width:19%;
+            width:85%;
             flex:1;
             margin: 0px 10px;
             .project{
@@ -86,10 +85,16 @@
     }
     .project-description {
     margin-left: 40px;
-    
+             
+h5{
+               margin-left: 20px;
+ 
+}
         li{
-            list-style: "-  ";
-            font-size: 14px;
+            list-style: "  ";
+            font-size: 11px;
+            margin-left: 20px;
+            
         }
     }
 .project img{
@@ -110,17 +115,33 @@ cursor:pointer;
 
 
 
-@media (max-width:1300px){
-  
+@media (max-width:600px){
+  .main-projects{
+       display: flex;
+       flex-direction: column !important;
+       width:100%;
+      
+      
+.main-project-example{
+    width:100%;
+       display: flex;
 
-       .main-project-example{
-            display:none;
-       
+     justify-content: center;
+       align-items: center;
 }
+
+  }
+  .project{
+width: 777px;
+  }
+  .project-description p{
+      font-size: 11px;
+  }
+
+
 .project5SmallScreen{
     display:block;
     display:flex;
-    flex-direction: column;
   
 }
  
@@ -130,7 +151,8 @@ cursor:pointer;
     
 }
  
-@media (max-width:750px){
+@media (max-width:550px){
+  
     .project{
         flex-direction: column;
 
@@ -139,6 +161,12 @@ cursor:pointer;
 }
 
 
+.projects{
+    @include flex(center, center, column);
+    width:90%;
+        margin: 0 30px;
+
+}
 
 
 

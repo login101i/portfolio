@@ -103,6 +103,9 @@ html{
         .intro-social img{
             height:40px;
         }
+
+
+}
     }
     @media (max-width:720px){
        
@@ -120,6 +123,10 @@ html{
         height:240px;
         width:300px;
         display:block;
+        }
+
+        .project img{
+            width:80%
         }
 
     }
@@ -151,11 +158,26 @@ html{
         width:300px;
         display:block;
     }
+    .project {
+        @include flex(center, center, center);
+        max-width:350px;
+        p{
+            font-size: 22px
+        }
+        
+    }
+  
+    .project5max1300px{
+             @include flex(center, center, column);
+
+    }
+      .footer{
+            width:100%;
+        }
     }
        @media (max-width:500px){
            
          .main-head nav{
-             @include flex(center, center, column);
              margin:0 auto;
             height: 10vh;
             padding-right: 30px;
@@ -216,7 +238,7 @@ html{
 
     }
 }
-}
+
 
 
 // animation
@@ -235,5 +257,11 @@ ul.transition li {
   background: rgb(14, 59, 126);
   width: 20%;
   height:100vh;
+
+}
+
+.project5max1300px{
+       margin:10px;
+       width:90%;
 
 }
